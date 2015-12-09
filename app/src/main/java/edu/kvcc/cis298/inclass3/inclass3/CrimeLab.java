@@ -44,7 +44,7 @@ public class CrimeLab {
         //type List, and not ArrayList. (Polymorphism)
         mCrimes = new ArrayList<>();
 
-        //for loop to populate our arraylist with some dummy data.
+        //for loop to populate our arrayList with some dummy data.
         for (int i=0; i < 100; i++) {
             Crime crime = new Crime();
             crime.setTitle("Crime #" + i);
@@ -62,6 +62,11 @@ public class CrimeLab {
         return mCrimes;
     }
 
+    //setter for the crimes list
+    public void setCrimes(List<Crime> crimes) {
+        mCrimes = crimes;
+    }
+
     //Method to get a specific crime based on the
     //UUID that is passed in.
     public Crime getCrime(UUID id) {
@@ -76,4 +81,7 @@ public class CrimeLab {
         //no match, return null.
         return null;
     }
+
+
+
 }

@@ -103,7 +103,7 @@ public class CrimeFragment extends Fragment {
 
     }
 
-    //This method IS responisble for inflating the view
+    //This method IS responsible for inflating the view
     //and getting the content on the screen.
     @Override
     public View onCreateView(LayoutInflater inflater,
